@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_FILES'
+define service ZUI_FILES_O4 {
+  expose ZC_FILES;
+}

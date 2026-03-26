@@ -1,0 +1,67 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'ZC_FILES',
+    typeNamePlural: 'ZC_FILESs'
+  }
+}
+annotate view ZC_FILES with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'ZC_FILES',
+    position: 10
+  } ]
+  @UI.hidden: true
+  ID;
+
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #MEDIUM,
+    label: 'Memo'
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Memo'
+  } ]
+  Memo;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #MEDIUM,
+    label: ''
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    label: ''
+  } ]
+  Attachment;
+
+  @UI.lineItem: [ {
+    position: 30 ,
+    importance: #MEDIUM,
+    label: ''
+  } ]
+  @UI.identification: [ {
+    position: 30 ,
+    label: ''
+  } ]
+  @UI.selectionField: [{ position: 10 }]
+  Filename;
+
+  @UI.lineItem: [ {
+    position: 40 ,
+    importance: #MEDIUM,
+    label: ''
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    label: ''
+  } ]
+  @UI.selectionField: [{ position: 20 }]
+  Filetype;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}
